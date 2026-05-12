@@ -1,1 +1,17 @@
+crashdumps/
+players/
+srcc/
+worlds/
+plugins/
+PocketMine-MP.pharr
+pocketmine.yml
+genisys.yml
+server.properties
+server.log
+banned-cids.txt
+banned-ips.txt
+banned-players.txt
+ops.txt
+white-list.txt
+src.zip
 src/gitcommit.md
